@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refurbished - TechStore Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex" id="wrapper">
+        <div id="sidebar-wrapper">
+            <div class="sidebar-heading p-4"><i class="bi bi-cpu-fill fs-3"></i><br>TECHSTORE</div>
+            <div class="list-group list-group-flush">
+                <a href="dashboard.html" class="list-group-item"><i class="bi bi-grid-1x2"></i> Dashboard</a>
+                <a href="products.html" class="list-group-item"><i class="bi bi-laptop"></i> Products</a>
+                <a href="refurbished.html" class="list-group-item active"><i class="bi bi-recycle"></i> Refurbished</a>
+                <a href="accessories.html" class="list-group-item"><i class="bi bi-headset"></i> Accessories</a>
+                <a href="sales.html" class="list-group-item"><i class="bi bi-receipt"></i> Sales</a>
+                <a href="purchases.html" class="list-group-item"><i class="bi bi-cart"></i> Purchases</a>
+                <a href="customers.html" class="list-group-item"><i class="bi bi-people"></i> Customers</a>
+                <a href="suppliers.html" class="list-group-item"><i class="bi bi-truck"></i> Suppliers</a>
+                <a href="ledger.html" class="list-group-item"><i class="bi bi-book"></i> Ledger</a>
+                <a href="reports.html" class="list-group-item"><i class="bi bi-bar-chart"></i> Reports</a>
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark px-4 py-3">
+                <button class="btn btn-glass me-3" id="menu-toggle"><i class="bi bi-list"></i></button>
+                <h4 class="m-0 fw-bold">REFURBISHED SYSTEMS</h4>
+                <button class="btn btn-glass ms-auto"><i class="bi bi-plus-lg me-2"></i> Add Item</button>
+            </nav>
+            <div class="container-fluid p-4">
+                <div class="glass-card animate-fade-in">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Device Type</th>
+                                <th>Brand/Model</th>
+                                <th>Serial No</th>
+                                <th>Condition</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Laptop</td>
+                                <td>Dell Latitude 5480</td>
+                                <td>SN-789012</td>
+                                <td><span class="badge bg-success">Grade A</span></td>
+                                <td>$350.00</td>
+                                <td>In Stock</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.getElementById("menu-toggle").addEventListener("click", () => document.getElementById("wrapper").classList.toggle("toggled"));</script>
+</body>
+</html>

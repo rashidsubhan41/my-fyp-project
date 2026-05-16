@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+serviceAccountKey.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.vercel
